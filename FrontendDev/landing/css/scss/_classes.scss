@@ -1,0 +1,123 @@
+#top_section{
+    @include img_background;
+    @include flex_column;
+    height: 100vh;
+    div{
+        @include flex_central_content;
+        flex-grow: 5;
+        font-size: $normal_size_font;
+
+    }
+}
+
+#logo{
+    font-size: $large_size_font;
+    color: $text_color;
+    padding-top: $small_size_font;
+}
+
+#nav_item{
+    ul{
+        @include flex_row;
+        justify-content: space-between;
+        
+    }
+}
+#second_section{
+    @include flex_row;
+    height: 70vh;
+    align-items: center;
+    div{
+        @include flex_central_content;
+        flex: 1;
+    }
+
+}
+.img_covers_background{
+    @include img_background('../../assest/img/kid2.jpg');
+    flex-basis: 50%;
+    flex-grow: 1;
+    height: 100%;
+    flex:1;
+
+}
+#img_cover1{
+    @include img_background()
+}
+#card_section{
+    @include flex_central_content;
+    background-color: $card_section_body_color;
+    #card_section_header{
+        @include flex_central_content;
+    }
+}
+
+#card_items{
+    @include flex_row;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-basis:40%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+}
+
+.item{
+    @include flex_column;
+    justify-content: space-around;
+    background-color: $card_section_item_body_color;
+    color: $card_section_item_color;
+    padding: 10px;
+    margin: 5%;
+    // width:27%;
+
+}
+#fourth_section{
+    @include img_background('../../assest/img/project3.jpg');
+    @include flex_central_content;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    div{
+        @include flex_column;
+        text-align: center;
+    }
+
+}
+#bottom_section{
+    @include flex_column;
+    justify-content: center;
+    text-align: center;
+    #info_rows{
+        @include flex_column;
+    }
+}
+
+.info_item{
+    @include flex_row;
+    height: 50vh;
+    div{
+        @include flex_central_content;
+        flex: 1;
+    }
+}
+
+.flex_row_reverse{
+    flex-direction: row-reverse;
+}
+.img_bg{
+    flex-basis: 50%;
+    flex-grow: 1;
+    height: 100%;
+    flex:1;
+}
+#img_cover1{
+    @include img_background('../../assest/img/kid1.jpg');
+}
+#img_cover2{
+    @include img_background('../../assest/img/kid2.jpg');
+}
+#img_cover3{
+    @include img_background('../../assest/img/kid3.jpg');
+}
