@@ -5,6 +5,11 @@ body {
 }
 body li, body ul, body a {
   text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {

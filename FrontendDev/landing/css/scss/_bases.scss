@@ -3,10 +3,14 @@ body{
     color: $text_color;
     li,ul,a{
         text-decoration: none;
+        list-style: none;
     }
 
 }
 
+a{
+    text-decoration: none;
+}
 
 nav{
     @include flex_row;

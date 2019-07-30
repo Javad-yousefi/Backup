@@ -1,0 +1,35 @@
+@mixin padding_margin_defult {
+    padding: 0;
+    margin: 0;
+    
+}
+*,html,body{
+    @include padding_margin_defult;
+}
+header{
+    @include padding_margin_defult;
+    background-color: red;
+    height: 200px;
+    width: 100%;
+
+}
+.midel_part{
+    @include padding_margin_defult;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+    .side_bar{
+        flex: 1;
+        background-color: green;
+    }
+    .article{
+        flex: 5;
+        background-color: yellow;
+    }
+}
+
+footer{
+    @include padding_margin_defult;
+    background-color: blue;
+    height: 100px;
+}

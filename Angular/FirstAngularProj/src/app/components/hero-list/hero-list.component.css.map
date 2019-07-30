@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "hero-list.component.scss"
+    ],
+    "names": [],
+    "file": "hero-list.component.css"
+}

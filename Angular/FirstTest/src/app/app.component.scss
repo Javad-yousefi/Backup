@@ -1,0 +1,43 @@
+@mixin padding_margin_defult {
+    padding: 0;
+    margin: 0;
+    
+}
+*,body,html{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 244, 232);
+    align-content: center;
+    @include padding_margin_defult;
+}
+
+
+header{
+    @include padding_margin_defult;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+
+}
+footer{
+    @include padding_margin_defult;
+    display: flex;
+    height: 10vh;
+}
+.midelSection{
+    @include padding_margin_defult;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 55vh;
+    .article{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        }
+    .sidebar{
+        flex:1;
+        flex-direction: column;
+    }
+}
